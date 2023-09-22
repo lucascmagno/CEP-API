@@ -1,3 +1,4 @@
+/*Função responsável por pesquisar o cep*/
 function pesquisarCep() {
     var cep = document.getElementById('cep').value.replace(/\D/g, '');
     var addressInfoDiv = document.getElementById('addressInfo');
@@ -9,11 +10,9 @@ function pesquisarCep() {
         // Mostrar mensagem de carregamento
         addressInfoDiv.innerHTML = "Carregando...";
 
-        fetch('https://viacep.com.br/ws/' + cep + '/json/')
-          .then(function (response) {
+        fetch('https://viacep.com.br/ws/' + cep + '/json/').then(function (response) {
             return response.json();
-          })
-          .then(function (data) {
+          }).then(function (data){
             if (!data.erro) {
               // Construir a string de endereço
               var addressString = "<b>Rua:</b> " + data.logradouro + "<br>";

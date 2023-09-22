@@ -1,3 +1,6 @@
+/*Formatação para caracteres acentuados*/
+@charset "utf-8";
+/*Estilos para o body*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -8,12 +11,14 @@ body {
     background-size: cover;
 }
 
+/*estilos para o h2*/
 h2{
     text-align: center;
     color: #fff;
     text-shadow: 3px;
 }
 
+/*Estilização*/
 form {
     background-color: #fff;
     padding: 20px;
@@ -22,11 +27,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/*personaliza o label*/
 label {
     display: block;
     margin-bottom: 10px;
 }
 
+/*estilização do campo input do cep*/
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -35,6 +42,7 @@ input[type="text"] {
     font-size: 16px;
 }
 
+/*estilização do botão de consulta à api*/
 button {
     background-color: #007bff;
     color: #fff;
@@ -45,10 +53,12 @@ button {
     cursor: pointer;
 }
 
+/*quando o mouse passar sobre o botão*/
 button:hover {
     background-color: #0056b3;
 }
 
+/*Estilização do card que mostra as informações*/
 #addressInfo {
     margin: auto;
     margin: 20px;
